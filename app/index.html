@@ -4,56 +4,69 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
 <div class="container">
-  <div class="time-search position-absolute"></div>
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+  <div class="time-search position-absolute d-flex">
+    <div class="time-search-date d-flex flex-column justify-content-center fs-4 lh-base">
+      <p>日期</p>
+      <date>2022/08/08</date>
+    </div>
+    <div class="time-search-time d-flex flex-column justify-content-center fs-4 lh-base">
+      <p>日落時分</p>
+      <time>18:37</time>
+    </div>
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<div class="sunset">
+  <div class="container d-flex align-items-end">
+    <div class="sunset-body">
+      <a href="#" class="sunset-tag pe-3"># 必遊景點</a><a href="#" class="sunset-tag"># 拍照打卡</a>
+      <h2 class="sunset-title mb-2">絕美夕陽</h2>
+      <p class="sunset-description">在日落時分,寬闊的海面映照著天空中的雲影與逐漸西沈的夕陽,彷彿同時欣賞著兩場日落。</p>
+    </div>
+  </div>
+</div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="road">
+  <div class="container position-relative">
+    <img src="./assets/images/road-picture.png" alt="road-picture">
+    <div class="position-absolute road-body d-flex flex-column align-items-center">
+      <h2 class="road-title mb-5">木棧道<br>開放時間</h2>
+      <div class="road-opentime">
+        <div class="road-time d-flex justify-content-between">
+          <div class="road-time-items d-flex flex-column justify-content-center fs-4 lh-base">
+            <p>日期</p>
+            <date>2022/08/08</date>
+          </div>
+          <div class="road-time-items d-flex flex-column justify-content-center fs-4 lh-base">
+            <p>日落時分</p>
+            <date>8:05 ~ 18:37</date>
+          </div>
+        </div>
+        <p class="road-remark">※ 木棧道開放及關閉時間,仍需由現場巡守人員視海況微調</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="ecology">
+  <div class="ecology-bg container d-flex align-items-end">
+    <div class="ecology-body">
+      <a href="#" class="ecology-tag"># 親子旅遊</a><a href="#" class="ecology-tag"># 深度旅遊</a>
+      <h2 class="ecology-title">生態旅遊</h2>
+      <p class="ecology-description">大自然的生態教室,獨特濕地生態孕育豐富生態,各種魚類、鳥類、蟹類的棲息地都在這裡能夠一探究竟。</p>
+    </div>
+  </div>
+</div>
+
+<div class="around container d-flex justify-content-between">
+  <div ><a href="#" class="around-eats"></a></div>
+  <div>
+    <ul class="around-dist list-unstyled d-flex row flex-wrap">
+      <li class="col"><a href="#" class="around-qingshui"></a></li>
+      <li class="col"><a href="#" class="around-wuqi"></a></li>
+      <li class="col p-4"><a href="#" class="around-shalu"></a></li>
+      <li class="col p-4"><a href="#" class="around-dajia"></a></li>
+    </ul>
   </div>
 </div>

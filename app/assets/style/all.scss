@@ -29,10 +29,17 @@ p {
 //layout.scss
 
 .header {
-    height: 905px;
-    background: url("../images/header-bg.jpeg") no-repeat top center;
+    height: 648px;
+    background: url("../images/header-bg.jpeg") no-repeat 20% 50%;
     background-size: cover;
-    margin-bottom: 99px;
+    margin-bottom: 60px;
+
+    @include desktop {
+        height: 905px;
+        background: url("../images/header-bg.jpeg") no-repeat top center;
+        background-size: cover;
+        margin-bottom: 99px;
+    }
 
 }
 
@@ -43,7 +50,7 @@ h1 {
 }
 
 .navbar {
-    padding-top: 20.8px;
+    padding-top: 20px;
     padding-bottom: 24px;
 
     @include desktop {
@@ -111,8 +118,7 @@ h1 {
 }
 
 .footer {
-    padding-top: 100px;
-    padding-bottom: 99px;
+    background-color: #000000;
 
     a {
         display: block;
@@ -126,13 +132,20 @@ h1 {
         font-size: 20px;
     }
 
+    &-brand {
+        width: 200px;
+        height: 60px;
+
+        @include desktop {
+            width: 264px;
+            height: 80px;
+        }
+    }
+
     &-link {
         font-size: 20px;
     }
 
-    .mb-a {
-        margin-bottom: 54px;
-    }
 
     &-social-media a:hover {
         transform: scale(1.2);
@@ -144,14 +157,20 @@ h1 {
 
 //banner-time-search
 .time-search {
-    width: 100%;
-    height: 148px;
-    padding: 28px;
-    background-color: #00000080;
-    top: 640px;
+    height: 472px;
 
     @include desktop {
-        width: 364px;
+        height: 687px;
+    }
+
+    &-body {
+        height: 148px;
+        padding: 28px;
+        background-color: #00000080;
+
+        @include desktop {
+            bottom: 116px;
+        }
     }
 
     date,
@@ -170,8 +189,14 @@ h1 {
 
 //sunset-block
 .sunset {
-    height: 722px;
-    background: url("../images/sunset-bg.jpeg") no-repeat 75% 55%;
+    height: 825px;
+    background: linear-gradient(to bottom, #10121500 43.63%, #101215), url("../images/sunset-bg.jpeg") no-repeat 90% 70%;
+
+    @include desktop {
+        height: 722px;
+        background: linear-gradient(to bottom, #10121500 66.89%, #101215), url("../images/sunset-bg.jpeg") no-repeat 100% 55%;
+    }
+
 
     .container {
         height: 100%;
@@ -179,11 +204,19 @@ h1 {
 
     &-tag {
         font-size: 20px;
+        margin-bottom: 4px;
+
+        @include desktop {
+            margin-bottom: 10px;
+        }
     }
 
     &-body {
-        max-width: 266px;
-        margin-bottom: 66px;
+        padding-bottom: 0px;
+
+        @include desktop {
+            padding-bottom: 66px;
+        }
     }
 
     &-title {
@@ -195,25 +228,30 @@ h1 {
 
 //road block
 .road {
-    .container {
-        padding-top: 98px;
-        padding-bottom: 100px;
-    }
 
     img {
-        width: 65.964%;
-        height: auto;
+
+        @include desktop {
+            // width: 65.964%;
+        }
+
     }
 
     &-body {
-        left: 59.561%;
-        top: 35.673%;
+        position: relative;
 
     }
 
     &-opentime {
+
         background-color: #00000080;
-        padding: 28px 24px;
+
+        @include desktop {
+            position: absolute;
+            top: 232px;
+            left: -94px;
+
+        }
     }
 
     &-title {
@@ -222,20 +260,19 @@ h1 {
 
     }
 
-    &-time {
-        margin-bottom: 28px;
-    }
-
-    &-time-items p {
-        margin-bottom: 20px;
-    }
-
 }
 
 //ecology
 .ecology {
-    height: 960px;
-    background: url("../images/ecology-bg.png") no-repeat center;
+    // margin-bottom: 76px;
+    height: 825px;
+    background: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/ecology-bg.jpg") no-repeat 45% 50%;
+    background-size: cover;
+
+    @include desktop {
+        height: 960px;
+        background: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/ecology-bg.jpg") no-repeat center;
+    }
 
     .container {
         height: 100%;
@@ -245,64 +282,131 @@ h1 {
         font-size: 20px;
     }
 
-    &-body {
-        max-width: 266px;
-        margin-bottom: 66px;
-    }
-
     &-title {
-        padding-top: 20px;
         font-size: 64px;
         line-height: 96px;
     }
 }
 
+.ecologytime {
+    &-content {
+        @include desktop {
+            height: 458px;
+        }
+    }
+
+    &-body {
+
+        @include desktop {
+            width: 51.052%;
+        }
+    }
+
+    h2 {
+        font-size: 64px;
+        line-height: 96px;
+
+    }
+
+    &-illus-top-left {
+        max-width: 200px;
+
+        @include desktop {
+            position: absolute;
+            left: 28px;
+            top: 70px;
+        }
+
+    }
+
+    &-illus-bottom-right {
+
+        @include desktop {
+            position: absolute;
+            right: 27px;
+            top: 220px;
+        }
+
+        &-img {
+            max-width: 160px;
+
+            @include desktop {
+                max-width: 200px;
+            }
+        }
+    }
+
+    &-remark {
+        @include desktop {
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+
+
+
 .around {
-    padding-top: 100px;
-    padding-bottom: 99px;
+
     a {
-        display: block;
+        display: flex;
+        align-items: end;
+    }
+
+    h4 {
+        padding-left: 12px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .row {
+        @include desktop {
+            height: 540px;
+        }
+
     }
 
     &-eats {
-        //max-width: 47.368%;
-        width: 558px;
-        height: 540px;
-        background-image: url("../images/attractions-picture-1.jpg");
+        height: 316px;
+        background: url("../images/attractions-picture-1.jpg") no-repeat center;
         background-size: cover;
-        margin: auto;
+        
+        @include desktop {
+            height: 100%;
+            margin: auto;
+            h4 {
+                font-size: 64px;
+                line-height: 108px;
+            }
+        }
+        
     }
-   
+
+    &-dist-items {
+        height: 316px;
+        background-size: cover;
+        @include desktop {
+            height: 100%;
+        }
+    }
 
     &-qingshui {
-        width: 267px;
-        height: 258px;
         background-image: url("../images/attractions-picture-2.jpg");
-        background-size: cover;
-        margin: auto;
+
     }
 
     &-wuqi {
-        width: 267px;
-        height: 258px;
         background-image: url("../images/attractions-picture-3.jpg");
-        background-size: cover;
-        margin: auto;
     }
 
     &-shalu {
-        width: 267px;
-        height: 258px;
         background-image: url("../images/attractions-picture-4.jpg");
-        background-size: cover;
-        margin: auto;
     }
 
     &-dajia {
-        width: 267px;
-        height: 258px;
         background-image: url("../images/attractions-picture-5.jpg");
-        background-size: cover;
-        margin: auto;
     }
 }

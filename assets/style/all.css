@@ -28913,13 +28913,35 @@ p {
   }
 }
 
-.navbar-nav .dropdown-menu {
-  top: 75%;
-  left: -50%;
+@media (min-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    top: 85%;
+    left: -20%;
+    min-width: 7rem;
+  }
 }
 
-.navbar-nav .dropdown-item {
+.navbar .dropdown-item {
   color: #767C80;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.navbar .dropdown-toggle::after {
+  position: absolute;
+  top: 25px;
+}
+
+.navbar .dropdown-divider {
+  background-color: #fff;
+  height: 2px;
 }
 
 .navbar-collapse {
@@ -28934,9 +28956,8 @@ p {
 
 .nav-link {
   color: white;
-  margin-top: 25px;
-  margin-bottom: 25px;
   text-align: center;
+  position: relative;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -28998,6 +29019,16 @@ p {
     background-size: cover;
     margin-bottom: 99px;
   }
+}
+
+.header_index .nav-link {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.header_index .nav-link:hover, .header_index .nav-link:focus {
+  color: #000;
 }
 
 .wrap {
@@ -29291,15 +29322,21 @@ p {
 }
 
 .list-group-title {
-  color: white;
+  color: #fff;
   background-color: #101215;
   border-color: #101215;
 }
 
 .list-group-item.active {
-  color: white;
+  color: #fff;
   background-color: #767C80;
   border-color: #767C80;
+}
+
+.list-group-item.disabled {
+  color: #fff;
+  background-color: #101215;
+  border-color: #101215;
 }
 
 .attractions hr {

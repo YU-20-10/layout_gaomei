@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    高美濕地｜註冊
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <h1 class="mb-0"><a class="navbar-brand py-0" href="./index.html">高美濕地</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-xl-between">
+              <li class="nav-item">
+                <a class="nav-link active fs-4 lh-base my-3" aria-current="page" href="./index.html">首頁</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-4 lh-base my-3" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  景點
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./attractions.html">推薦景點</a></li>
+                  <li><a class="dropdown-item" href="./attractions_photo.html">拍照/打卡</a></li>
+                  <li><a class="dropdown-item" href="./attractions_family.html">親子/家族</a></li>
+                  <li><a class="dropdown-item" href="./attractions_couple.html">情侶/約會</a></li>
+                  <li><a class="dropdown-item" href="./attractions_Indepth.html">深度旅遊</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-4 lh-base my-3" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  小吃
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./streetfood.html">推薦小吃</a></li>
+                  <li><a class="dropdown-item" href="./streetfood_qingshui.html">清水小吃</a></li>
+                  <li><a class="dropdown-item" href="./streetfood_wuqi.html">梧棲小吃</a></li>
+                  <li><a class="dropdown-item" href="./streetfood_shalu.html">沙鹿小吃</a></li>
+                  <li><a class="dropdown-item" href="./streetfood_dajia.html">大甲小吃</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-4 lh-base my-3" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  行程
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./travelplan_oneday.html">一日行程</a></li>
+                  <li><a class="dropdown-item" href="./travelplan_twodays.html">兩日行程</a></li>
+                  <li><a class="dropdown-item" href="./travelplan_threedays.html">三日行程</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4 lh-base my-3" href="./collection.html" role="button">
+                  珍藏
+                </a>
+              </li>
+            </ul>
+            <hr class="dropdown-divider">
+            <div class="nav-item d-flex justify-content-around justify-content-xl-start navbar-login">
+              <div>
+                <a class="nav-link active lh-base" aria-current="page" href="./signin.html">註冊</a>
+              </div>
+              <div>
+                <a class="nav-link active lh-base" aria-current="page" href="./login.html">登入</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <section class="user container py-11 py-lg-13">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-4 d-flex flex-column align-items-center">
+            <div class="mb-3 row w-100">
+                <label for="signin-username" class="col-sm-3 col-form-label">暱稱</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="signin-username" placeholder="煞氣a小花">
+                </div>
+            </div>
+            <div class="mb-3 row w-100">
+                <label for="signin-mail" class="col-sm-3 col-form-label">信箱</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="signin-mail" placeholder="example@gmail.com">
+                </div>
+            </div>
+            <div class="mb-3 row w-100">
+                <label for="signin-password" class="col-sm-3 col-form-label">密碼</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="signin-password" placeholder="請輸入密碼">
+                </div>
+            </div>
+            <div class="mb-5 row w-100">
+                <label for="signin-passwordcheck" class="col-sm-3 col-form-label">密碼確認</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="signin-passwordcheck" placeholder="請再輸入一次密碼">
+                </div>
+            </div>
+            <div>
+                <a href="./collection.html" role="button" class="btn btn-primary px-4">註冊</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer pt-11 pb-13 py-xl-13">
+      <div class="container text-center">
+        <div class="row row-cols-auto justify-content-center justify-content-xl-between">
+          <div class="col-12 col-xl-3 mb-11 mb-xl-0"><a href="./index.html"><img src="./assets/images/logo.svg" alt="logo"
+                class="footer-brand"></a></div>
+          <div class="col-12 col-xl-4 mb-11 mb-xl-0">
+            <h3 class="footer-title mb-9 mb-xl-10">聯絡資訊</h3>
+            <div class="mb-9 mb-xl-10">
+              <h4>高美濕地遊客中心</h4>
+              <a href="tel:+886426111566" class="footer-link d-inline">(04)26111566</a>
+              /
+              <a href="tel:++886426111989" class="footer-link d-inline">(04)26111989</a>
+            </div>
+            <div>
+              <h4>生態導覽聯絡資訊</h4>
+              <a href="tel:+88622222222" class="footer-link">(04)22222222</a>
+              <a href="mailto:cccccccc@hexschool.com" class="footer-link">cccccccc@hexschool.com</a>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3">
+            <h3 class="footer-title mb-9 mb-xl-10">友站連結</h3>
+            <a href="#" class="footer-link">台中市政府觀光旅遊局</a>
+            <a href="#" class="footer-link mb-9 mb-xl-10">台中市海洋資源漁業發展所</a>
+            <div class="d-flex justify-content-center footer-social-media">
+              <a href="#" class="me-4"><img src="./assets/images/footer-message.svg" alt="message-icon"></a>
+              <a href="#" class="me-4"><img src="./assets/images/footer-instagram.svg" alt="instagram-icon"></a>
+              <a href="#"><img src="./assets/images/footer-share.svg" alt="share-icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

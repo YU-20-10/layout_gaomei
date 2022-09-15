@@ -1,0 +1,261 @@
+---
+title: 高美濕地｜沙鹿
+layout: ./app/layout.ejs
+engine: ejs
+---
+<section class="around container my-9 my-xl-13">
+    <div class="row">
+        <div class="col-xl-2">
+            <div class="list-group fs-5 text-center">
+                <a class="list-group-item list-group-item-action disabled py-3 py-3">
+                    地區
+                </a>
+                <a href="./around.html" class="list-group-item list-group-item-action py-3">所有地區</a>
+                <a href="./around_qingshui.html" class="list-group-item list-group-item-action py-3">清水地區</a>
+                <a href="./around_wuqi.html" class="list-group-item list-group-item-action py-3">梧棲地區</a>
+                <a href="./around_shalu.html" class="list-group-item list-group-item-action active py-3"
+                    aria-current="true">沙鹿地區</a>
+                <a href="./around_dajia.html" class="list-group-item list-group-item-action py-3">大甲地區</a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-10">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-4 fs-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="./around.html">地區</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="./around_shalu.html">沙鹿地區</a></li>
+                </ol>
+            </nav>
+            <div class="card-wrap row d-flex flex-wrap flex-column flex-xl-row justify-content-between mb-8">
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-streetfood-4"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold lh-base">來來牛排</h5>
+                            <a href="./around_shalu.html" class="btn btn-outline-primary">#沙鹿地區</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#streetfood-map-4"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                    <a class="card-icon card-icon-park" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="該景點附設停車場"><span class="material-symbols-outlined disabled"
+                                            role="button" aria-disabled="true">local_parking</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#streetfood-collect-4"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="streetfood-map-4" tabindex="-1"
+                                aria-labelledby="streetfood-map-label-4" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.23307478719!2d120.55690151479406!3d24.2336255843534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346914e263514f65%3A0xf8963ebbd9376a00!2z5L6G5L6G54mb5o6S!5e0!3m2!1szh-TW!2stw!4v1663162297886!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="streetfood-collect-4" tabindex="-1"
+                                aria-labelledby="streetfood-collect-label-4" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="streetfood-collect-label-4">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 來來牛排 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-streetfood-9"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold lh-base">古早味蛋餅</h5>
+                            <a href="./around_shalu.htmls" class="btn btn-outline-primary">#沙鹿地區</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#streetfood-map-9"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#streetfood-collect-9"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="streetfood-map-9" tabindex="-1"
+                                aria-labelledby="streetfood-map-label-9" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.515972470959!2d120.57670911479381!3d24.223726084358137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346915abe4d0cd9b%3A0xc4e1b0dca5232d7a!2z5Y-k5pep5ZGz6JuL6aSF!5e0!3m2!1szh-TW!2stw!4v1663163991047!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="streetfood-collect-9" tabindex="-1"
+                                aria-labelledby="streetfood-collect-label-9" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="streetfood-collect-label-9">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 古早味蛋餅 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-attractions-12"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold">深波圖書館</h5>
+                            <a href="./around_shalu.html" class="btn btn-outline-primary">#沙鹿地區</a>
+                            <a href="./attractions_family.html" class="btn btn-outline-primary">#親子/家族</a>
+                            <a href="./attractions_couple.html" class="btn btn-outline-primary">#情侶約會</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#attractions-map-12"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                    <a class="card-icon card-icon-park" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="該景點附設停車場"><span class="material-symbols-outlined disabled"
+                                            role="button" aria-disabled="true">local_parking</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#attractions-collect-12"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="attractions-map-12" tabindex="-1"
+                                aria-labelledby="attractions-map-label-12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3638.2430438320653!2d120.5616485!3d24.2332768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346914fd1559542b%3A0xe8c3a94e741d58b8!2z6Ie65Lit5biC56uL5ZyW5pu46aSo5rKZ6bm_5rex5rOi5YiG6aSo!5e0!3m2!1szh-TW!2stw!4v1663158647668!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="attractions-collect-12" tabindex="-1"
+                                aria-labelledby="attractions-collect-label-12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="attractions-collect-label-12">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 深波圖書館 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-streetfood-11"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold lh-base">炸麻糬</h5>
+                            <a href="./around_shalu.html" class="btn btn-outline-primary">#沙鹿地區</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#streetfood-map-11"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#streetfood-collect-11"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="streetfood-map-11" tabindex="-1"
+                                aria-labelledby="streetfood-map-label-11" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.109170876375!2d120.55748291479414!3d24.237960184351184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346914e369ee4a19%3A0x18ec4581c149f667!2z5rKZ6bm_6bq757Os54eSL-WcsOeTnOeQg-WJteWni-W6lw!5e0!3m2!1szh-TW!2stw!4v1663164244057!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="streetfood-collect-11" tabindex="-1"
+                                aria-labelledby="streetfood-collect-label-11" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="streetfood-collect-label-11">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 炸麻糬 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

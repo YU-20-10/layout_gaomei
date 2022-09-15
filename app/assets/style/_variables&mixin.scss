@@ -5,3 +5,7 @@
         @content;
     }
 }
+
+@mixin card-img($url,$position) {
+    background: $url no-repeat $position/cover;
+}

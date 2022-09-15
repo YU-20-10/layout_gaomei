@@ -1,0 +1,144 @@
+//layout.scss
+.header {
+    background-color: #101215;
+}
+
+
+h1 {
+    @include desktop {
+        margin-right: 9.47%;
+    }
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+    @include desktop {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    &-toggler {
+        width: 32px;
+        height: 24px;
+        background: url("../images/nav-menu.svg") no-repeat center;
+        background-size: cover;
+    }
+
+    &-brand {
+        display: block;
+        width: 120px;
+        height: 36px;
+        background: url("../images/logo.svg") no-repeat;
+        background-size: 100%;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+
+        @include desktop {
+            width: 160px;
+            height: 48px;
+        }
+    }
+
+    &-nav {
+        @include desktop {
+            width: 72.018%;
+        }
+
+        .dropdown-menu {
+            @include desktop {
+                top: 85%;
+                left: -20%;
+                min-width: 7rem;
+            }
+        }
+    }
+
+    .dropdown {
+        &-item {
+            color: #767C80;
+            text-align: center;
+            padding: 1rem 1rem;
+            font-size: 20px;
+
+            @include desktop {
+                padding: 0.5rem 1rem;
+            }
+
+        }
+
+        &-toggle::after {
+            position: absolute;
+            top: 25px;
+        }
+
+        &-divider {
+            background-color: #fff;
+            height: 2px;
+        }
+    }
+
+    &-collapse {
+        justify-content: space-between;
+    }
+
+    &-login {
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+
+.nav-link {
+    color: white;
+    text-align: center;
+    position: relative;
+
+    &:hover,
+    &:focus {
+        color: $success;
+    }
+
+}
+
+
+.footer {
+    background-color: #000000;
+    color: white;
+
+    a {
+        display: block;
+        color: white;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    &-brand {
+        width: 200px;
+        height: 60px;
+
+        @include desktop {
+            width: 264px;
+            height: 80px;
+        }
+    }
+
+    &-link {
+        font-size: 20px;
+    }
+
+
+    &-social-media a:hover {
+        transform: scale(1.2);
+        background-color: #00000080;
+    }
+}

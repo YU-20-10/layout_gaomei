@@ -1,0 +1,96 @@
+//around.scss
+.around {
+    .card-img {
+        &-attractions-1 {
+            @include card-img(url("../images/attractions-picture-1.jpg"), center);
+        }
+
+        &-attractions-2 {
+            @include card-img(url("../images/attractions-picture-2.jpg"), center);
+        }
+
+        &-attractions-3 {
+            @include card-img(url("../images/attractions-picture-3.jpg"), center);
+        }
+
+        &-attractions-4 {
+            @include card-img(url("../images/attractions-picture-4.jpg"), center);
+        }
+
+        &-attractions-5 {
+            @include card-img(url("../images/attractions-picture-5.jpg"), center);
+        }
+
+        &-attractions-6 {
+            @include card-img(url("../images/attractions-picture-6.jpg"), center);
+        }
+
+        &-attractions-7 {
+            @include card-img(url("../images/attractions-picture-7.jpg"), center);
+        }
+
+        &-attractions-8 {
+            @include card-img(url("../images/attractions-picture-8.jpg"), center);
+        }
+
+        &-attractions-9 {
+            @include card-img(url("../images/attractions-picture-9.jpg"), center);
+        }
+
+        &-attractions-10 {
+            @include card-img(url("../images/attractions-picture-10.jpg"), center);
+        }
+
+        &-attractions-11 {
+            @include card-img(url("../images/attractions-picture-11.jpg"), center);
+        }
+
+        &-attractions-12 {
+            @include card-img(url("../images/attractions-picture-12.jpg"), center);
+        }
+
+        &-streetfood-1 {
+            @include card-img(url("../images/streetfood-picture-1.jpg"), bottom);
+        }
+
+        &-streetfood-2 {
+            @include card-img(url("../images/streetfood-picture-2.jpg"), left 80%);
+        }
+
+        &-streetfood-3 {
+            @include card-img(url("../images/streetfood-picture-3.jpg"), center 67%);
+        }
+
+        &-streetfood-4 {
+            @include card-img(url("../images/streetfood-picture-4.jpg"), center);
+        }
+
+        &-streetfood-5 {
+            @include card-img(url("../images/streetfood-picture-5.jpg"), center);
+        }
+
+        &-streetfood-6 {
+            @include card-img(url("../images/streetfood-picture-6.jpg"), center);
+        }
+
+        &-streetfood-7 {
+            @include card-img(url("../images/streetfood-picture-7.jpg"), center);
+        }
+
+        &-streetfood-8 {
+            @include card-img(url("../images/streetfood-picture-8.jpg"), center 65%);
+        }
+
+        &-streetfood-9 {
+            @include card-img(url("../images/streetfood-picture-9.jpg"), center);
+        }
+
+        &-streetfood-10 {
+            @include card-img(url("../images/streetfood-picture-10.jpg"), center);
+        }
+
+        &-streetfood-11 {
+            @include card-img(url("../images/streetfood-picture-11.jpg"), center);
+        }
+    }
+}

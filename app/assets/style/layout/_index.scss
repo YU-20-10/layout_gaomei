@@ -1,8 +1,325 @@
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "./variables&mixin.scss";
+//index.scss
+.header_index {
+    height: 100vh;
+    background: url("../images/header-bg.jpeg") no-repeat 20% 50%;
+    background-size: cover;
+    margin-bottom: 60px;
 
+    @include desktop {
+        background: url("../images/header-bg.jpeg") no-repeat top center;
+        background-size: cover;
+        margin-bottom: 99px;
+    }
+
+    .nav-link {
+        color: white;
+        text-align: center;
+        position: relative;
+
+        &:hover,
+        &:focus {
+            color: $black;
+        }
+
+    }
+
+}
+
+.wrap {
+    background-color: #101215;
+
+    a {
+        color: white;
+    }
+
+    * {
+        color: white;
+    }
+}
+
+//banner-time-search
+.time-search {
+    height: 80vh;
+
+    &-body {
+        height: 148px;
+        padding: 28px;
+        background-color: #00000080;
+
+        @include desktop {
+            bottom: 116px;
+        }
+    }
+
+    date,
+    time {
+        display: block;
+    }
+
+    &-date {
+        width: 60%;
+    }
+
+    &-time {
+        width: 40%;
+    }
+}
+
+//sunset-block
+.sunset {
+    height: 825px;
+    background: linear-gradient(to bottom, #10121500 43.63%, #101215), url("../images/sunset-bg.jpeg") no-repeat 90% 70%;
+
+    @include desktop {
+        height: 722px;
+        background: linear-gradient(to bottom, #10121500 66.89%, #101215), url("../images/sunset-bg.jpeg") no-repeat 100% 55%;
+    }
+
+
+    .container {
+        height: 100%;
+    }
+
+    &-tag {
+        font-size: 20px;
+        margin-bottom: 4px;
+
+        @include desktop {
+            margin-bottom: 10px;
+        }
+    }
+
+    &-body {
+        padding-bottom: 0px;
+
+        @include desktop {
+            padding-bottom: 66px;
+        }
+    }
+
+    &-title {
+        padding-top: 20px;
+        font-size: 64px;
+        line-height: 96px;
+    }
+}
+
+//road block
+.road {
+
+    img {
+
+        @include desktop {
+            // width: 65.964%;
+        }
+
+    }
+
+    &-body {
+        position: relative;
+
+    }
+
+    &-opentime {
+
+        background-color: #00000080;
+
+        @include desktop {
+            position: absolute;
+            top: 232px;
+            left: -94px;
+
+        }
+    }
+
+    &-title {
+        font-size: 64px;
+        line-height: 96px;
+
+    }
+
+}
+
+//ecology
+.ecology {
+    // margin-bottom: 76px;
+    height: 825px;
+    background: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/ecology-bg.jpg") no-repeat 45% 50%;
+    background-size: cover;
+
+    @include desktop {
+        height: 960px;
+        background: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/ecology-bg.jpg") no-repeat center;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    &-tag {
+        font-size: 20px;
+    }
+
+    &-title {
+        font-size: 64px;
+        line-height: 96px;
+    }
+}
+
+.ecologytime {
+    &-content {
+        @include desktop {
+            height: 458px;
+        }
+    }
+
+    &-body {
+
+        @include desktop {
+            width: 51.052%;
+        }
+    }
+
+    h2 {
+        font-size: 64px;
+        line-height: 96px;
+
+    }
+
+    &-illus-top-left {
+        max-width: 200px;
+
+        @include desktop {
+            position: absolute;
+            left: 28px;
+            top: 70px;
+        }
+
+    }
+
+    &-illus-bottom-right {
+
+        @include desktop {
+            position: absolute;
+            right: 27px;
+            top: 220px;
+        }
+
+        &-img {
+            max-width: 160px;
+
+            @include desktop {
+                max-width: 200px;
+            }
+        }
+    }
+
+    &-remark {
+        @include desktop {
+            text-align: center;
+        }
+    }
+
+}
+
+.area {
+
+    a {
+        display: flex;
+        align-items: end;
+    }
+
+    h4 {
+        padding-left: 12px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .row {
+        @include desktop {
+            height: 540px;
+        }
+
+    }
+
+    &-eats {
+        height: 316px;
+        background: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/area-picture-1.jpg") no-repeat center;
+        background-size: cover;
+
+        @include desktop {
+            height: 100%;
+            margin: auto;
+
+            h4 {
+                font-size: 64px;
+                line-height: 108px;
+            }
+        }
+
+    }
+
+    &-link-items {
+        height: 316px;
+        background-size: cover;
+
+        @include desktop {
+            height: 100%;
+        }
+    }
+
+    &-qingshui {
+        background-image: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/area-picture-2.jpg");
+
+    }
+
+    &-wuqi {
+        background-image: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/area-picture-3.jpg");
+    }
+
+    &-shalu {
+        background-image: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/area-picture-4.jpg");
+    }
+
+    &-dajia {
+        background-image: linear-gradient(to bottom, #10121500 50%, #101215), url("../images/area-picture-5.jpg");
+    }
+}
+
+// list-group
+
+.list-group {
+    display: none;
+    background-color: #000000;
+
+    @include desktop {
+        display: flex;
+    }
+
+    a {
+        display: block;
+    }
+
+    &-title {
+        color: $white;
+        background-color: #101215;
+        border-color: #101215;
+    }
+
+    &-item {
+        &.active {
+            color: $white;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+
+        &.disabled {
+            color: $white;
+            background-color: #101215;
+            border-color: #101215;
+        }
+    }
+}
 
 
 

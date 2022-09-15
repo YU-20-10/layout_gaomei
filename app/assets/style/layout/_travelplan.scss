@@ -1,0 +1,68 @@
+// travelplan.scss
+
+.tour-btn-wrap {
+    background-color: $primary;
+
+    a {
+        display: block;
+        color: $white;
+    }
+
+    span {
+        vertical-align: text-bottom;
+        color: $white;
+    }
+}
+
+.tour-btn {
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &-collect {
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        span {
+            color: $info;
+
+        }
+    }
+}
+
+.tour-text {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: $secondary;
+        border-radius: 50%;
+        left: -40px;
+    }
+
+    &-time {
+        display: block;
+        font-weight: bold;
+        text-align: right;
+        color: $secondary;
+    }
+}
+
+.tour-body {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 92%;
+        background-color: $secondary;
+        left: 31px;
+    }
+}

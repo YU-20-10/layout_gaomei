@@ -1,11 +1,11 @@
 ---
-title: 高美濕地｜周邊景點｜情侶/約會
+title: 高美濕地｜情侶/約會
 layout: ./app/layout.ejs
 engine: ejs
 ---
-<div class="attractions container my-9 my-lg-13">
+<div class="attractions container my-9 my-xl-13">
     <div class="row">
-        <div class="col-lg-2">
+        <div class="col-xl-2">
             <div class="list-group fs-5 text-center">
                 <a class="list-group-item list-group-item-action disabled py-3 py-3">
                     景點
@@ -18,64 +18,250 @@ engine: ejs
                 <a href="./attractions_Indepth.html" class="list-group-item list-group-item-action py-3">深度旅遊</a>
             </div>
         </div>
-        <div class="col-12 col-lg-10">
+        <div class="col-12 col-xl-10">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-4 fs-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">景點</li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="./attractions.html">景點</a></li>
                 </ol>
             </nav>
-            <div class="card-wrap row d-flex flex-wrap flex-column flex-lg-row justify-content-between mb-8">
-                <div class="col-12 col-lg-4 mb-4">
+            <div class="card-wrap row d-flex flex-wrap flex-column flex-xl-row justify-content-between mb-8">
+                <div class="col-12 col-xl-4 mb-4">
                     <div class="card">
-                        <div class="card-img card-img-WuChiCulturePoliceOffice"></div>
+                        <div class="card-img card-img-attractions-3"></div>
                         <div class="card-body">
-                            <h5 class="card-title mb-3">梧棲文化出張所</h5>
+                            <h5 class="card-title mb-3 fw-bold">台中港區藝術中心</h5>
+                            <a href="./around_qingshui.html" class="btn btn-outline-primary">#清水地區</a>
                             <a href="./attractions_photo.html" class="btn btn-outline-primary">#拍照/打卡</a>
                             <a href="./attractions_couple.html" class="btn btn-outline-primary">#情侶約會</a>
-                            <a href="./attractions_Indepth.html" class="btn btn-outline-primary">#深度旅遊</a>
                             <hr>
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex">
-                                    <a href="#" class="card-icon card-icon-map pe-2"><span
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#attractions-map-3"><span
                                             class="material-symbols-outlined">pin_drop</span></a>
-                                    <a href="#" class="card-icon card-icon-park"><span
-                                            class="material-symbols-outlined">local_parking</span></a>
+                                    <a class="card-icon card-icon-park" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="該景點附設停車場"><span class="material-symbols-outlined disabled"
+                                            role="button" aria-disabled="true">local_parking</span></a>
                                 </div>
-                                <a href="#" class="card-icon card-icon-collect"><span
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#attractions-collect-3"><span
                                         class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="attractions-map-3" tabindex="-1"
+                                aria-labelledby="attractions-map-label-3" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.208191213449!2d120.55547731479486!3d24.269457784336087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469149b8a037697%3A0xf05d3cf9d6270590!2z6Ie65Lit5biC5riv5Y2A6Jed6KGT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1663086376511!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="attractions-collect-3" tabindex="-1"
+                                aria-labelledby="attractions-collect-label-3" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="attractions-collect-label-3">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 台中港區藝術中心 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-4">
+                <div class="col-12 col-xl-4 mb-4">
                     <div class="card">
-                        <div class="card-img card-img-MitsuiOutletPark"></div>
+                        <div class="card-img card-img-attractions-6"></div>
                         <div class="card-body">
-                            <h5 class="card-title">台中三井outlet</h5>
+                            <h5 class="card-title mb-3 fw-bold">梧棲文化出張所</h5>
+                            <a href="./around_wuqi.html" class="btn btn-outline-primary">#梧棲地區</a>
                             <a href="./attractions_photo.html" class="btn btn-outline-primary">#拍照/打卡</a>
+                            <a href="./attractions_couple.html" class="btn btn-outline-primary">#情侶約會</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#attractions-map-6"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#attractions-collect-6"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="attractions-map-6" tabindex="-1"
+                                aria-labelledby="attractions-map-label-6" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.575814374735!2d120.52749971479447!3d24.256610584342255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346914cb6b867187%3A0xa5ea435e8bed589c!2z5qKn5qOy5paH5YyW5Ye65by15omA4oCU5Y6f5qKn5qOy6K2m5a-f5a6Y5ZCP5rS-5Ye65omA5Y-K5a6_6IiN576k!5e0!3m2!1szh-TW!2stw!4v1663089875158!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="attractions-collect-6" tabindex="-1"
+                                aria-labelledby="attractions-collect-label-6" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="attractions-collect-label-6">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 梧棲文化出張所 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-attractions-10"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold">清水國小日式宿舍</h5>
+                            <a href="./around_qingshui.html" class="btn btn-outline-primary">#清水地區</a>
+                            <a href="./attractions_photo.html" class="btn btn-outline-primary">#拍照/打卡</a>
+                            <a href="./attractions_couple.html" class="btn btn-outline-primary">#情侶約會</a>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#attractions-map-10"><span
+                                            class="material-symbols-outlined">pin_drop</span></a>
+                                </div>
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#attractions-collect-10"><span
+                                        class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="attractions-map-10" tabindex="-1"
+                                aria-labelledby="attractions-map-label-10" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.256812938109!2d120.57147331479469!3d24.267758984336957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691480a8b95905%3A0xbdefe4f56f1398f4!2z5riF5rC05YWs5a245qCh5pel5byP5a6_6IiN576k!5e0!3m2!1szh-TW!2stw!4v1663090744933!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="attractions-collect-10" tabindex="-1"
+                                aria-labelledby="attractions-collect-label-10" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="attractions-collect-label-10">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 清水國小日式宿舍 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4 mb-4">
+                    <div class="card">
+                        <div class="card-img card-img-attractions-12"></div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold">深波圖書館</h5>
+                            <a href="./around_shalu.html" class="btn btn-outline-primary">#沙鹿地區</a>
                             <a href="./attractions_family.html" class="btn btn-outline-primary">#親子/家族</a>
                             <a href="./attractions_couple.html" class="btn btn-outline-primary">#情侶約會</a>
                             <hr>
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex">
-                                    <a href="#" class="card-icon card-icon-map pe-2"><span
+                                    <a href="#" class="card-icon card-icon-map pe-2" data-bs-toggle="modal"
+                                        data-bs-target="#attractions-map-12"><span
                                             class="material-symbols-outlined">pin_drop</span></a>
-                                    <a href="#" class="card-icon card-icon-park"><span
-                                            class="material-symbols-outlined">local_parking</span></a>
+                                    <a class="card-icon card-icon-park" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-title="該景點附設停車場"><span class="material-symbols-outlined disabled"
+                                            role="button" aria-disabled="true">local_parking</span></a>
                                 </div>
-                                <a href="#" class="card-icon card-icon-collect"><span
+                                <a href="#" class="card-icon card-icon-collect" data-bs-toggle="modal"
+                                    data-bs-target="#attractions-collect-12"><span
                                         class="material-symbols-outlined">grade</span></a>
+                            </div>
+                            <div class="modal fade" id="attractions-map-12" tabindex="-1"
+                                aria-labelledby="attractions-map-label-12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3638.2430438320653!2d120.5616485!3d24.2332768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346914fd1559542b%3A0xe8c3a94e741d58b8!2z6Ie65Lit5biC56uL5ZyW5pu46aSo5rKZ6bm_5rex5rOi5YiG6aSo!5e0!3m2!1szh-TW!2stw!4v1663158647668!5m2!1szh-TW!2stw"
+                                                class="google-map" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="attractions-collect-12" tabindex="-1"
+                                aria-labelledby="attractions-collect-label-12" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-4" id="attractions-collect-label-12">加入收藏</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>已經將<span class="fw-bold"> 深波圖書館 </span>加入收藏 ^_^</p>
+                                            <p>是否要前往查看已收藏景點？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success fs-6 text-light"
+                                                data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                            <a role="button" class="btn btn-danger fs-6"
+                                                href="./collection.html">前往收藏頁面</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-4"></div>
+                
             </div>
         </div>
-    </div>
-    
-</div>
-</div>
-</div>
+    </div>  
 </div>

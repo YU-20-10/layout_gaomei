@@ -8,21 +8,21 @@ engine: ejs
     <div class="row">
         <div class="col-xl-2">
             <div class="list-group fs-5 text-center">
-                <a href="#" class="list-group-title list-group-item list-group-item-action py-3" aria-current="true">
+                <a class="list-group-title list-group-item list-group-item-action disabled py-3" aria-current="true">
                     行程
                 </a>
-                <a href="#" class="list-group-item list-group-item-action active py-3" aria-current="true">
+                <a href="./travelplan_oneday.html" class="list-group-item list-group-item-action active py-3" aria-current="true">
                     一日行程
                 </a>
-                <a href="#" class="list-group-item list-group-item-action py-3">兩日行程</a>
-                <a href="#" class="list-group-item list-group-item-action py-3">三日行程</a>
+                <a href="./travelplan_twodays.html" class="list-group-item list-group-item-action py-3">兩日行程</a>
+                <a href="./travelplan_threedays.html" class="list-group-item list-group-item-action py-3">三日行程</a>
             </div>
         </div>
         <div class="col-12 col-xl-10">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-4 fs-5">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">行程</li>
+                    <li class="breadcrumb-item active" aria-current="page">一日行程</li>
                 </ol>
             </nav>
             <div class="row d-flex flex-wrap flex-column flex-xl-row justify-content-between">
@@ -33,9 +33,31 @@ engine: ejs
                             <span class="material-symbols-outlined">expand_circle_down</span>
                             搭乘大眾交通/步行
                         </a>
-                        <a href="#" class="tour-btn-collect py-2 px-3"><span
-                            class="material-symbols-outlined">grade</span></a>
+                        <a href="#" class="tour-btn-collect py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#travelplan-collect-1"><span
+                                class="material-symbols-outlined">grade</span></a>
                     </p>
+                    <div class="modal fade" id="travelplan-collect-1" tabindex="-1"
+                        aria-labelledby="travelplan-collect-label-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-4" id="travelplan-collect-label-1">加入收藏</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    <p>已經將<span class="fw-bold"> 一日行程(搭乘大眾交通/步行) </span>加入收藏 ^_^</p>
+                                    <p>是否要前往查看已收藏行程？</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success fs-6 text-light"
+                                        data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                    <a role="button" class="btn btn-danger fs-6" href="./collection.html">前往收藏頁面</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="collapse show" id="OneDayTourWalk">
                         <ul class="tour-body card card-body list-unstyled ps-11">
                             <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
@@ -83,9 +105,31 @@ engine: ejs
                             <span class="material-symbols-outlined">expand_circle_down</span>
                             自駕遊/機車代步
                         </a>
-                        <a href="#" class="tour-btn-collect py-2 px-3"><span
-                            class="material-symbols-outlined">grade</span></a>
+                        <a href="#" class="tour-btn-collect py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#travelplan-collect-2"><span
+                                class="material-symbols-outlined">grade</span></a>
                     </p>
+                    <div class="modal fade" id="travelplan-collect-2" tabindex="-1"
+                        aria-labelledby="travelplan-collect-label-2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-4" id="travelplan-collect-label-2">加入收藏</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    <p>已經將<span class="fw-bold"> 一日行程(自駕遊/機車代步) </span>加入收藏 ^_^</p>
+                                    <p>是否要前往查看已收藏行程？</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success fs-6 text-light"
+                                        data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                    <a role="button" class="btn btn-danger fs-6" href="./collection.html">前往收藏頁面</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="collapse show" id="OneDayTourCar">
                         <ul class="tour-body card card-body list-unstyled ps-11">
                             <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
@@ -134,5 +178,4 @@ engine: ejs
             </div>
         </div>
     </div>
-
 </div>

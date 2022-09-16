@@ -91,7 +91,265 @@
   </header>
 
 
-  
+  <div class="travelplan container my-9 my-xl-13">
+    <div class="row">
+        <div class="col-xl-2">
+            <div class="list-group fs-5 text-center">
+                <a class="list-group-title list-group-item list-group-item-action disabled py-3" aria-current="true">
+                    行程
+                </a>
+                <a href="./travelplan_oneday.html" class="list-group-item list-group-item-action py-3">
+                    一日行程
+                </a>
+                <a href="./travelplan_twodays.html" class="list-group-item list-group-item-action active py-3"
+                    aria-current="true">兩日行程</a>
+                <a href="./travelplan_threedays.html" class="list-group-item list-group-item-action py-3">三日行程</a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-10">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-4 fs-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">兩日行程</li>
+                </ol>
+            </nav>
+            <div class="row d-flex flex-wrap flex-column flex-xl-row justify-content-between">
+                <div class="col-12 col-xl-6 mb-3 mb-xl-0">
+                    <p class="d-flex justify-content-between tour-btn-wrap">
+                        <a class="tour-btn py-2 ps-2" data-bs-toggle="collapse" href="#OneDayTourWalk" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <span class="material-symbols-outlined">expand_circle_down</span>
+                            搭乘大眾交通/步行
+                        </a>
+                        <a href="#" class="tour-btn-collect py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#travelplan-collect-3"><span
+                                class="material-symbols-outlined">grade</span></a>
+                    </p>
+                    <div class="modal fade" id="travelplan-collect-3" tabindex="-1"
+                        aria-labelledby="travelplan-collect-label-3" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-4" id="travelplan-collect-label-3">加入收藏</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    <p>已經將<span class="fw-bold"> 兩日行程(搭乘大眾交通/步行) </span>加入收藏 ^_^</p>
+                                    <p>是否要前往查看已收藏行程？</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success fs-6 text-light"
+                                        data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                    <a role="button" class="btn btn-danger fs-6" href="./collection.html">前往收藏頁面</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse show" id="OneDayTourWalk">
+                        <h4 class="text-center text-success py-3">第一天行程</h4>
+                        <ul class="tour-body card card-body list-unstyled ps-11">
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">09:00</span>
+                                <p class="w-100 px-2">鰲峰山運動公園</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">10:45 </span>
+                                <p class="w-100 px-2">阿婆粉圓</p>
+                                <span class="tour-text-time">30min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 y-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">11:15</span>
+                                <p class="w-100 px-2">紫雲巖</p>
+                                <span class="tour-text-time">30min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">11:55</span>
+                                <p class="w-100 px-2">阿財米糕</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">14:00</span>
+                                <p class="w-100 px-2">高美濕地 天空之鏡/生態旅遊</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:10</span>
+                                <p class="w-100 px-2">高美覓咖啡</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">16:50 </span>
+                                <p class="w-100 px-2">高美濕地/夕陽</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                        </ul>
+                        <h4 class="text-center text-success py-3">第二天行程</h4>
+                        <ul class="tour-body card card-body list-unstyled ps-11">
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">09:00</span>
+                                <p class="w-100 px-2">鰲峰山運動公園</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">10:45 </span>
+                                <p class="w-100 px-2">阿婆粉圓</p>
+                                <span class="tour-text-time">30min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 y-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">11:15</span>
+                                <p class="w-100 px-2">紫雲巖</p>
+                                <span class="tour-text-time">30min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">11:55</span>
+                                <p class="w-100 px-2">阿財米糕</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">14:00</span>
+                                <p class="w-100 px-2">高美濕地 天空之鏡/生態旅遊</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:10</span>
+                                <p class="w-100 px-2">高美覓咖啡</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">16:50 </span>
+                                <p class="w-100 px-2">高美濕地/夕陽</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <p class="d-flex justify-content-between tour-btn-wrap">
+                        <a class="tour-btn py-2 ps-2" data-bs-toggle="collapse" href="#OneDayTourCar" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <span class="material-symbols-outlined">expand_circle_down</span>
+                            自駕遊/機車代步
+                        </a>
+                        <a href="#" class="tour-btn-collect py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#travelplan-collect-4"><span
+                                class="material-symbols-outlined">grade</span></a>
+                    </p>
+                    <div class="modal fade" id="travelplan-collect-4" tabindex="-1"
+                        aria-labelledby="travelplan-collect-label-4" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-4" id="travelplan-collect-label-4">加入收藏</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    <p>已經將<span class="fw-bold"> 兩日行程(自駕遊/機車代步) </span>加入收藏 ^_^</p>
+                                    <p>是否要前往查看已收藏行程？</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success fs-6 text-light"
+                                        data-bs-dismiss="modal">不要，繼續瀏覽</button>
+                                    <a role="button" class="btn btn-danger fs-6" href="./collection.html">前往收藏頁面</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse show" id="OneDayTourCar">
+                        <h4 class="text-center text-danger py-3">第一天行程</h4>
+                        <ul class="tour-body card card-body list-unstyled ps-11">
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">09:00</span>
+                                <p class="w-100 px-2">三井outlet</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">10:45 </span>
+                                <p class="w-100 px-2">梧棲漁港</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 y-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">12:00</span>
+                                <p class="w-100 px-2">阿財米糕</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">13:45</span>
+                                <p class="w-100 px-2">鰲峰山運動公園</p>
+                                <span class="tour-text-time">45min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">14:45</span>
+                                <p class="w-100 px-2">清水眷村文化園區</p>
+                                <span class="tour-text-time">20min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:10</span>
+                                <p class="w-100 px-2">港區藝術中心</p>
+                                <span class="tour-text-time">20min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:50</span>
+                                <p class="w-100 px-2">高美濕地 天空之鏡/生態旅遊</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">16:50 </span>
+                                <p class="w-100 px-2">高美濕地/夕陽</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                        </ul>
+                        <h4 class="text-center text-danger py-3">第二天行程</h4>
+                        <ul class="tour-body card card-body list-unstyled ps-11">
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">09:00</span>
+                                <p class="w-100 px-2">三井outlet</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">10:45 </span>
+                                <p class="w-100 px-2">梧棲漁港</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 y-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">12:00</span>
+                                <p class="w-100 px-2">阿財米糕</p>
+                                <span class="tour-text-time">90min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">13:45</span>
+                                <p class="w-100 px-2">鰲峰山運動公園</p>
+                                <span class="tour-text-time">45min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">14:45</span>
+                                <p class="w-100 px-2">清水眷村文化園區</p>
+                                <span class="tour-text-time">20min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:10</span>
+                                <p class="w-100 px-2">港區藝術中心</p>
+                                <span class="tour-text-time">20min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">15:50</span>
+                                <p class="w-100 px-2">高美濕地 天空之鏡/生態旅遊</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                            <li class="tour-text border px-2 px-xl-3 py-2 my-2 d-flex justify-content-between">
+                                <span class="tour-text-time">16:50 </span>
+                                <p class="w-100 px-2">高美濕地/夕陽</p>
+                                <span class="tour-text-time">60min</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer class="footer pt-11 pb-13 py-xl-13">
       <div class="container text-center">

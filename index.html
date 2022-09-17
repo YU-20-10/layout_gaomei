@@ -18,6 +18,7 @@ current: index
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -92,7 +93,7 @@ current: index
           </div>
         </div>
       </nav>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" data-aos="fade-right" data-aos-duration="600">
         <div class="swiper-wrapper">
           <div class="swiper-slide header-banner header-banner-1"></div>
           <div class="swiper-slide header-banner header-banner-2"></div>
@@ -105,10 +106,9 @@ current: index
           <div class="swiper-button-next position-static mt-0"><span
               class="material-symbols-outlined">arrow_forward_ios</span></div>
         </div>
-
       </div>
 
-      <div class="container d-flex align-items-end justify-content-center justify-content-xl-start">
+      <div class="container d-flex align-items-end justify-content-center justify-content-xl-start" >
         <div class=" col-11 col-xl-4 time-search-body d-flex justify-content-center position-absolute">
           <div class="time-search-date d-flex flex-column justify-content-center fs-4 lh-base">
             <p>日期</p>
@@ -124,11 +124,11 @@ current: index
     </header>
 
 
-    <section class="sunset">
-      <div class="container d-flex align-items-end">
+    <section class="sunset" data-aos="zoom-out" data-aos-duration="400">
+      <div class="container d-flex align-items-end" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="200">
         <div class="row w-100">
           <div class="sunset-body col-12 col-xl-3">
-            <a  class="sunset-tag pe-3"># 必遊景點</a><a class="sunset-tag"># 拍照打卡</a>
+            <a class="sunset-tag pe-3"># 必遊景點</a><a class="sunset-tag"># 拍照打卡</a>
             <h2 class="sunset-title mb-1 mb-xl-2">絕美夕陽</h2>
             <p>在日落時分,寬闊的海面映照著天空中的雲影與逐漸西沈的夕陽,彷彿同時欣賞著兩場日落。</p>
           </div>
@@ -139,10 +139,10 @@ current: index
     <section class="road py-11 py-xl-13">
       <div class="container position-relative">
         <div class="row">
-          <div class="col-12 col-xl-8 mb-8 mb-xl-0">
+          <div class="col-12 col-xl-8 mb-8 mb-xl-0" data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="200">
             <img src="./assets/images/road-picture.jpg" alt="road-picture">
           </div>
-          <div class="col-12 col-xl-4  d-flex flex-xl-column justify-content-xl-center">
+          <div class="col-12 col-xl-4  d-flex flex-xl-column justify-content-xl-center" data-aos="zoom-out-left" data-aos-duration="800" data-aos-delay="300">
             <div class="road-body d-flex flex-column align-items-xl-center">
               <h2 class="road-title mb-8 mb-xl-5 w-100">木棧道<br>開放時間</h2>
               <div class="road-opentime py-7 px-3 px-xl-4">
@@ -164,12 +164,12 @@ current: index
       </div>
     </section>
 
-    <section class="ecology py-11 py-xl-13">
-      <div class="container d-flex align-items-end">
+    <section class="ecology py-11 py-xl-13" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="200">
+      <div class="container d-flex align-items-end" data-aos="zoom-out-down" data-aos-duration="800" data-aos-delay="300">
         <div class="row w-100">
           <div class="col-12 col-xl-3">
             <div class="ecology-body">
-              <a  class="ecology-tag pe-3"># 親子旅遊</a><a class="ecology-tag"># 深度旅遊</a>
+              <a class="ecology-tag pe-3"># 親子旅遊</a><a class="ecology-tag"># 深度旅遊</a>
               <h2 class="ecology-title py-1 py-xl-2">生態旅遊</h2>
               <p>大自然的生態教室,獨特濕地生態孕育豐富生態,各種魚類、鳥類、蟹類的棲息地都在這裡能夠一探究竟。</p>
             </div>
@@ -178,7 +178,7 @@ current: index
       </div>
     </section>
 
-    <section class="ecologytime container d-flex flex-column mb-11 my-xl-13">
+    <section class="ecologytime container d-flex flex-column mb-11 my-xl-13" data-aos="fade-left" data-aos-duration="600">
       <div class="ecologytime-content row justify-content-xl-center position-relative">
         <div class="ecologytime-illus-top-left d-flex mb-9 mb-xl-0">
           <img src="./assets/images/ecology-illus(1).png" alt="ecology-illus(1)">
@@ -207,36 +207,35 @@ current: index
           <img src="./assets/images/ecology-illus(2).png" alt="ecology-illus(2)"
             class="ecologytime-illus-bottom-right-img">
         </div>
-
       </div>
     </section>
 
     <section class="area mb-11 mb-xl-13">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-6 mb-4 mb-xl-0">
+          <div class="col-12 col-xl-6 mb-4 mb-xl-0" data-aos="flip-right">
             <a href="./around.html" class="area-eats">
               <h4>周邊景點小吃</h4>
             </a>
           </div>
-          <div class="col-12 col-xl-6">
+          <div class="col-12 col-xl-6" data-aos="flip-right" data-aos-duration="400" data-aos-delay="200">
             <ul class="area-link list-unstyled d-flex row flex-wrap mb-0">
               <li class="col-12 col-xl-6 mb-4">
                 <a href="./around_qingshui.html" class="area-link-items area-qingshui">
                   <h4>清水地區</h4>
                 </a>
               </li>
-              <li class="col-12 col-xl-6 mb-4">
+              <li class="col-12 col-xl-6 mb-4" data-aos="flip-right" data-aos-duration="400" data-aos-delay="200">
                 <a href="./around_wuqi.html" class="area-link-items area-wuqi">
                   <h4>梧棲地區</h4>
                 </a>
               </li>
-              <li class="col-12 col-xl-6 mb-4 mb-xl-0">
+              <li class="col-12 col-xl-6 mb-4 mb-xl-0" data-aos="flip-right" data-aos-duration="400" data-aos-delay="200">
                 <a href="./around_shalu.html" class="area-link-items area-shalu">
                   <h4>沙鹿地區</h4>
                 </a>
               </li>
-              <li class="col-12 col-xl-6">
+              <li class="col-12 col-xl-6" data-aos="flip-right" data-aos-duration="400" data-aos-delay="200">
                 <a href="./around_dajia.html" class="area-link-items area-dajia">
                   <h4>大甲地區</h4>
                 </a>
@@ -282,6 +281,7 @@ current: index
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

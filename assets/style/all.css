@@ -14450,6 +14450,7 @@ p {
 
 body {
   font-family: 'Noto Serif TC', serif;
+  overflow-x: hidden;
 }
 
 .card-title {

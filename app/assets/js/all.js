@@ -1,6 +1,5 @@
-$(function () {
-  console.log('Hello Bootstrap5');
-});
+//AOS
+AOS.init();
 
 // swipper
 var swiper = new Swiper(".mySwiper", {

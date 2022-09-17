@@ -14,9 +14,7 @@
 
         .show {
             background-color: #10121568;
-            margin-top: 12px;
-
-            
+            margin-top: 12px;          
         }
 
         .dropdown-item {
@@ -184,14 +182,6 @@ header {
 
 //road block
 .road {
-
-    img {
-
-        @include desktop {
-            // width: 65.964%;
-        }
-
-    }
 
     &-body {
         position: relative;

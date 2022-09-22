@@ -14453,6 +14453,10 @@ body {
   overflow-x: hidden;
 }
 
+.card hr {
+  margin: 1rem 0;
+}
+
 .card-title {
   font-size: 24px;
 }
@@ -14494,10 +14498,6 @@ body {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.card hr {
-  margin: 1rem 0;
 }
 
 .modal .btn {
@@ -14933,8 +14933,7 @@ header {
 .navbar-toggler {
   width: 32px;
   height: 24px;
-  background: url("../images/nav-menu.svg") no-repeat center;
-  background-size: cover;
+  background: url("../images/nav-menu.svg") no-repeat center/cover;
 }
 
 .navbar-brand {
@@ -15003,7 +15002,7 @@ header {
 }
 
 .nav-link {
-  color: white;
+  color: #fff;
   text-align: center;
   position: relative;
 }
@@ -15013,13 +15012,13 @@ header {
 }
 
 .footer {
-  background-color: #000000;
-  color: white;
+  background-color: #101215;
+  color: #fff;
 }
 
 .footer a {
   display: block;
-  color: white;
+  color: #fff;
 }
 
 .footer h3, .footer .h3 {
@@ -15298,15 +15297,6 @@ header {
 
 .around .card-img-streetfood-11 {
   background: url("../images/streetfood-picture-11.jpg") no-repeat center/cover;
-}
-
-.user .btn-primary:hover {
-  background-color: #859CA6;
-  border-color: #859CA6;
-}
-
-.user .btn-outline-secondary:hover {
-  color: #fff;
 }
 
 .collection .card:hover .card-img::after {

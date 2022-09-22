@@ -1,5 +1,6 @@
-//around.scss
+//start -- around
 .around {
+
     .card-img {
         &-attractions-1 {
             @include card-img(url("../images/attractions-picture-1.jpg"), center);
@@ -94,3 +95,4 @@
         }
     }
 }
+//end -- around

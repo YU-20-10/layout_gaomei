@@ -1,16 +1,10 @@
-.user {
-    .btn-primary:hover {
-        background-color: $success;
-        border-color: $success;
-    }
 
-    .btn-outline-secondary:hover {
-        color: $white;
-    }
-}
-
+//start -- collection
 .collection {
+    //start -- collection > card
     .card {
+        
+        //start -- collection > card > hover時img透明效果
         &:hover {
             .card-img::after {
                 opacity: 0.2;
@@ -19,12 +13,17 @@
                 opacity: 1;
             }
         }
+        //end -- collection > card > hover時img透明效果
+
+        //start -- collection > card > 使用者頭像
         &-img-user {
             width: 75px;
             height: 75px;
             @include card-img(url("../images/collection-userphoto.jpg"), center 80%);
         }
+        //end -- collection > card > 使用者頭像
 
+        //start -- collection > card > img不透明效果
         &-img::after {
             content: "";
             position: absolute;
@@ -35,25 +34,32 @@
             background-color: $gray-700;
             opacity: 0.6;
         }
+        //end -- collection > card > img不透明效果
 
         &-img-attractions-12 {
             @include card-img(url("../images/attractions-picture-12.jpg"), center);
         }
+
         &-img-streetfood-1 {
             @include card-img(url("../images/streetfood-picture-1.jpg"), bottom);
         }
+
         &-img-streetfood-2 {
             @include card-img(url("../images/streetfood-picture-2.jpg"), left 80%);
         }
+
         &-img-streetfood-4 {
             @include card-img(url("../images/streetfood-picture-4.jpg"), center);
         }
+
         &-img-streetfood-5 {
             @include card-img(url("../images/streetfood-picture-5.jpg"), center);
         }
+
         &-img-streetfood-6 {
             @include card-img(url("../images/streetfood-picture-6.jpg"), center);
         }
+        
         &-img-travelplan-1 {
             @include card-img(url("../images/travelplan-picture-1.jpg"),center);
         }
@@ -66,6 +72,9 @@
             }
         }
     }
+    //end -- collection > card
+
+    //start -- collection > title下方分隔線
     &-attractions-title,&-streetfood-title,&-travelplan-title {
         &::after {
             content: "";
@@ -79,7 +88,8 @@
             @include desktop {
                 background: linear-gradient(to right,$success,$white 30%);
             }
-        }
-        
+        } 
     }
+    //end -- collection > title下方分隔線
 }
+//end -- collection

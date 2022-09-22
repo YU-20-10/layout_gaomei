@@ -1,5 +1,4 @@
-//base.scss
-
+//start -- base
 a {
     color: black;
     text-decoration: none;
@@ -18,8 +17,13 @@ body {
     overflow-x: hidden;
 }
 
-//card共通設定
+//start -- base > card
 .card {
+
+    hr {
+        margin: 1rem 0;
+    }
+
     &-title {
         font-size: 24px;
     }
@@ -35,6 +39,7 @@ body {
         }
     }
 
+    //start -- base > card > icon
     &-icon {
         display: block;
 
@@ -66,22 +71,25 @@ body {
             transform: scale(1.2);
         }
     }
-
-    hr {
-        margin: 1rem 0;
-    }
+    //end -- base > card > icon
 }
 
-//modal設定
+//start -- base > card > modal
 .modal {
     .btn {
         padding: 6px;
     }
 }
+//end -- base > card > modal
 
-//google map設定
+//start -- base > card > google-map
 .google-map {
     width: 600px;
     height: 450px;
     border: 0;
 }
+//end -- base > card > google-map
+
+//end -- base > card
+
+//end -- base

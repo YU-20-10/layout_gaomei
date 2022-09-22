@@ -1,6 +1,8 @@
-//layout.scss
+//start -- layout
+
+//start -- layout > header
 header {
-    background-color: #101215;
+    background-color: $primary;
 }
 
 
@@ -22,8 +24,7 @@ h1 {
     &-toggler {
         width: 32px;
         height: 24px;
-        background: url("../images/nav-menu.svg") no-repeat center;
-        background-size: cover;
+        background: url("../images/nav-menu.svg") no-repeat center/cover;
     }
 
     &-brand {
@@ -58,7 +59,7 @@ h1 {
 
     .dropdown {
         &-item {
-            color: #767C80;
+            color: $secondary;
             text-align: center;
             padding: 1rem 1rem;
             font-size: 20px;
@@ -66,7 +67,6 @@ h1 {
             @include desktop {
                 padding: 0.5rem 1rem;
             }
-
         }
 
         &-toggle::after {
@@ -75,7 +75,7 @@ h1 {
         }
 
         &-divider {
-            background-color: #fff;
+            background-color: $white;
             height: 2px;
         }
     }
@@ -93,7 +93,7 @@ h1 {
 
 
 .nav-link {
-    color: white;
+    color: $white;
     text-align: center;
     position: relative;
 
@@ -103,15 +103,16 @@ h1 {
     }
 
 }
+//end -- layout > header
 
-
+//start -- layout > footer
 .footer {
-    background-color: #000000;
-    color: white;
+    background-color: $primary;
+    color: $white;
 
     a {
         display: block;
-        color: white;
+        color: $white;
     }
 
     h3 {
@@ -142,3 +143,6 @@ h1 {
         background-color: #00000080;
     }
 }
+//end -- layout > footer
+
+//end -- layout

@@ -1,5 +1,6 @@
-// travelplan.scss
+//start -- travelplan
 
+//start -- travelplan > 行程標題文字
 .tour-btn-wrap {
     background-color: $primary;
 
@@ -13,7 +14,9 @@
         color: $white;
     }
 }
+//end -- travelplan > 行程標題文字
 
+//start -- travelplan > 行程標題收藏btn
 .tour-btn {
 
     &:hover {
@@ -32,10 +35,12 @@
         }
     }
 }
+//end -- travelplan > 行程標題收藏btn
 
+//start -- travelplan > tour-text
 .tour-text {
     position: relative;
-
+    //start -- travelplan > tour-text > 偽類畫出時間線中的圓點
     &::before {
         content: "";
         position: absolute;
@@ -45,6 +50,7 @@
         border-radius: 50%;
         left: -40px;
     }
+    //end -- travelplan > tour-text > 偽類畫出時間線中的圓點
 
     &-time {
         display: block;
@@ -53,10 +59,13 @@
         color: $secondary;
     }
 }
+//end -- travelplan > tour-text
 
+//start -- travelplan > tour-body
 .tour-body {
     position: relative;
 
+    //start -- travelplan > tour-body > 偽類畫出時間線
     &::before {
         content: "";
         position: absolute;
@@ -65,4 +74,8 @@
         background-color: $secondary;
         left: 31px;
     }
+    //end -- travelplan > tour-body > 偽類畫出時間線
 }
+//end -- travelplan > tour-body
+
+//end -- travelplan
